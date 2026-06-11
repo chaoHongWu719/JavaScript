@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #fff;
+    padding: 40px 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* 說明方框 */
+.info-box {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 24px 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-box h1 {
+    font-size: 22px;
+}
+
+#statusText {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 六顆球 */
+.balls-row {
+    display: flex;
+    gap: 16px;
+}
+
+.ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffe066;
+    display: flex;
+    align-items: center;  /* 數字在球內垂直置中 */
+    justify-content: center;  /* 數字在球內水平置中 */
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.ball.locked {  /* 已經開獎的球 */
+    background: #f0c000;
+}
+
+/* 按鈕 */
+#restartBtn {
+    margin-top: 20px;
+    padding: 10px 28px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;  /*滑鼠屬標移動上去，顯示可點擊*/
+    
+}
+#restartBtn:disabled {  /*開獎進行中，按鈕不可點擊*/
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+#restartBtn:not(:disabled):hover {
+    background: #eee;
+}
