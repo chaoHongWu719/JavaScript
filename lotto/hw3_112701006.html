@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "zh-TW">
+<head>
+    <meta charset = "utf-8">
+    <title>樂透動態開獎</title>
+    <link rel = "stylesheet" href = "hw3.css">
+</head>
+
+<body>
+    <main>
+    <!-- 說明方框 -->
+    <div class = "info-box">
+        <h1>樂透動態開獎</h1>  <!--標題不變-->
+        <p>
+            系統自動從 1 ~ 49 中隨機抽出 6 個不重複號碼</strong>, 
+            由左至右依序開出，開出後號碼固定顯示。
+        </p>  <!--說明文字不變-->
+        <div id = "statusText">開獎進行中…</div>  <!--狀態文字會變: 開獎進行中 or 開獎完成-->
+    </div>
+
+    <!-- 六個球 -->
+    <div class = "balls-row">
+        <div class = "ball" id = "ball-0">?</div>
+        <div class = "ball" id = "ball-1">?</div>
+        <div class = "ball" id = "ball-2">?</div>
+        <div class = "ball" id = "ball-3">?</div>
+        <div class = "ball" id = "ball-4">?</div>
+        <div class = "ball" id = "ball-5">?</div>
+    </div>
+
+    <!-- 重新開獎按鈕 -->
+    <button class = "restart-btn" id = "restartBtn">重新開獎</button>
+
+    </main>
+    <script src = "hw3.js"></script>
+</body>
+</html>
