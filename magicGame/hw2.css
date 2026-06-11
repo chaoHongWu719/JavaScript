@@ -1,0 +1,68 @@
+h1, p {
+    text-align: center; /*title, instruction, and copyright*/
+    width: 80%;
+    padding: 16px 0;  /*top and bottom = 16, left and right = 0*/
+    border-radius: 15px;
+}
+
+h1 {
+    background-color: #dbeafe;
+    color: blue;
+    margin: 20px auto 15px;  /*top = 20, bottom = 15*/
+}
+
+p.instruction {
+    background-color: #fef3c7;  /*light yellow*/
+    color: brown;
+    border-left: 6px solid orange;
+    margin: 0 auto 10px;  /*top = 0, bottom = 10*/
+}
+
+table, td, th {
+    text-align: center;
+    border: solid blue;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #dbeafe;
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /*3 columns with equal width*/
+    gap: 10px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px auto;   /*top and bottom = 10, left and right = auto*/
+    padding: 10px 25px;  /*top, bottom = 10, left, right = 25*/
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #5c8aec;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+#result-box {
+    display: inline-block;
+    min-width: 50px;
+    min-height: 25px;
+    padding: 6px 12px;
+    margin-left: 10px;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    color: black;  /*font color*/
+}
