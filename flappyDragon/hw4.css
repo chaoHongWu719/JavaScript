@@ -1,0 +1,71 @@
+* {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: #1a1a2e;
+    display: flex;
+    align-items: center;  /*vertical centering*/
+    justify-content: center;  /*horizontal centering*/
+    min-height: 95vh;
+    color: white;  /*text color*/
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a2e;
+}
+
+#gameover-screen {
+    display: none;  /*initially hidden, would be shown when game is over*/
+}
+
+.card {
+    background-color: rgb(100, 100, 245);
+    border-radius: 16px;
+    padding: 40px 48px;
+    text-align: center;
+}
+
+.card h1 {
+    margin-bottom: 24px;
+}
+
+.card ul {
+    text-align: left;
+}
+
+.card ul li {
+    margin-bottom: 10px;  /*space between list items*/
+}
+
+.key {
+    background-color: #1e2a45;
+    border: 1px solid #4a9eff;
+    border-radius: 8px;
+    padding: 2px 6px;  /*up = down = 2px, left = right = 6px*/
+}
+
+#final-score {
+    margin-bottom: 24px;
+    font-size: 1.25em;
+}
+
+.btn {
+    background-color: #ffd166;
+    color: #1a1a2e;  /*text color*/
+    border: none;
+    border-radius: 8px;
+    padding: 12px 36px;  /*up = down = 12px, left = right = 36px*/
+    font-size: 1.25em;
+    cursor: pointer;  /*cursor changes to pointer on hover*/
+}
+
+.btn:hover {
+    background-color: #f4a01a;  /*change button color on hover*/
+}
