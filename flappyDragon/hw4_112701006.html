@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>HW4-Flappy Bird</title>
+        <link rel = "stylesheet" href = "hw4.css">
+        <script src = "hw4.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Start Screen -->
+        <div id = "start-screen" class = "overlay">
+            <div class = "card">
+                <h1>Flappy Bird</h1>
+                <ul>  <!--special design on keys-->
+                    <li><span class = "key">↑</span> 向上飛行</li>
+                    <li><span class = "key">↓</span> 加速下降</li>
+                    <li><span class = "key">← →</span> 左右移動</li>
+                    <li>有重力、落地後會反彈、不可超出邊界</li>
+                </ul>
+                <button class = "btn" onclick = "launchGame()">START</button>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id = "gameover-screen" class = "overlay">
+            <div class = "card">
+                <h1>Game Over</h1>
+                <p id = "final-score"></p>
+                <button class = "btn" onclick = "launchGame()">RESTART</button>
+            </div>
+        </div>
+    </body>
+
+</html>
